@@ -1,4 +1,4 @@
-const BaseUrl = 'http://localhost:3000/api'
+const BaseUrl = 'https://localhost:3000/api'
 
 export const signUpAction = `${BaseUrl}/signup.php`
 
