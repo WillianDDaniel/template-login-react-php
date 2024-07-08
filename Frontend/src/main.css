@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.input-custom-code::-webkit-inner-spin-button,
+.input-custom-code::-webkit-outer-spin-button {
+    display: none;
+}

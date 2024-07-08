@@ -1,0 +1,39 @@
+Classe: User
+Propriedades:
+id: O identificador único do usuário.
+name: O primeiro nome do usuário.
+lastName: O sobrenome do usuário.
+email: O endereço de email do usuário.
+password: A senha criptografada do usuário.
+dateRegister: A data em que o usuário se registrou.
+isActive: Indica se a conta do usuário está ativa.
+code: O código de verificação associado ao usuário.
+codeExp: A data e hora de expiração do código de verificação.
+Métodos:
+getId(): Recupera o ID do usuário.
+setName($name): Define o primeiro nome do usuário.
+getName(): Recupera o primeiro nome do usuário.
+setLastName($lastName): Define o sobrenome do usuário.
+getLastName(): Recupera o sobrenome do usuário.
+setEmail($email): Define o endereço de email do usuário após sanitização.
+getEmail(): Recupera o endereço de email do usuário.
+setPassword($password): Define e criptografa a senha do usuário.
+getPassword(): Recupera a senha criptografada do usuário.
+setDateRegister($dateRegister): Define a data de registro do usuário.
+getDateRegister(): Recupera a data de registro do usuário.
+setIsActive($isActive): Define o status da conta do usuário.
+getIsActive(): Recupera o status da conta do usuário.
+setCode($code): Define o código de verificação associado ao usuário.
+getCode(): Recupera o código de verificação associado ao usuário.
+setCodeExp(): Define a data e hora de expiração do código de verificação para 10 minutos a partir do momento atual.
+getCodeExp(): Recupera a data e hora de expiração do código de verificação.
+saveUser(): Salva os dados do usuário no banco de dados.
+getUserByEmail($email): Recupera um usuário do banco de dados com base no endereço de email.
+getUserById($id): Recupera um usuário do banco de dados com base no ID.
+activateUser(): Ativa a conta do usuário.
+deleteUser(): Exclui a conta do usuário.
+checkPassword($password): Verifica se a senha fornecida corresponde à senha criptografada do usuário.
+updatePassword($newPassword): Atualiza a senha do usuário com uma nova senha criptografada.
+updateCode($code): Atualiza o código de verificação e sua data de expiração no banco de dados.
+checkCode($code): Verifica se o código fornecido corresponde ao código de verificação do usuário e se expirou.
+Esta classe representa uma entidade de usuário com propriedades e métodos para gerenciar dados do usuário, autenticação e manipulação de código de verificação. Ela fornece funcionalidades para interagir com os dados do usuário em um banco de dados e realizar várias operações, como registro de usuário, autenticação e ativação de conta. Além disso, inclui métodos para lidar com códigos de verificação para verificação de email do usuário ou funcionalidades de redefinição de senha.
