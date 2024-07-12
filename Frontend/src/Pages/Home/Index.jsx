@@ -13,7 +13,7 @@ export default function Home() {
 
             <Main>
                 <div>
-                    <h1 className="font-semibold text-3xl italic m-5 flex justify-center">Personalize aqui!</h1>
+                    <h1 className="font-semibold text-3xl px-3 italic my-5 flex justify-center w-full text-center">Personalize aqui!</h1>
                     
                     <div className="border-zinc-200 border rounded-lg p-10 flex flex-col items-center shadow-lg bg-white">
                         <p className="text-center text-2xl font-bold text-blue-600 mb-4">

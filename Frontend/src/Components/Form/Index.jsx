@@ -49,12 +49,17 @@ export default function Form({
     return (
         
         <form action={action} onSubmit={handleSubmit}
-            className="relative flex flex-col items-center bg-gradient-to-bl from-green-200 to-sky-200 mt-5 w-5/12 rounded"
+            className={`
+                "relative flex flex-col items-center 
+                bg-gradient-to-bl from-green-200 to-sky-200 
+                mt-5 sm:w-8/12 md:w-6/12 lg:w-5/12 w-10/12 rounded
+                max-[360px]:w-11/12
+            `}
         >
 
             <div className="flex flex-wrap w-full h-full justify-center">
 
-                <h2 className="text-2xl p-2 w-full flex justify-center">
+                <h2 className="text-2xl p-2 w-full flex justify-center max-[360px]:text-center">
                     {title}
                 </h2>
 
@@ -63,8 +68,9 @@ export default function Form({
             </div>
 
             {btnLabel === 'Entrar' &&
-                <div>
-                    <input name="keepLogged" type="checkbox" className="mr-2" /> Manter-me conectado
+                <div className="max-[280px]:text-sm max-[280px]:px-3 pt-1 max-[280px]:text-center">
+                    <input name="keepLogged" type="checkbox" className="mr-2" /> 
+                    Manter-me conectado
                 </div>
             }
 
@@ -85,7 +91,7 @@ export default function Form({
             </div>
 
             {btnLabel === 'Entrar' &&
-                <div className="mb-5 italic">
+                <div className="mb-5 text-center italic max-[280px]:text-sm">
                     <Link to='/forgot-pass'>
                         Esqueci minha senha
                     </Link>

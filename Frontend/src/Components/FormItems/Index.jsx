@@ -8,7 +8,7 @@ export default function FormItems({ formContent, checkPassword }) {
                     return (
                         <div key={i}
                             className={`flex flex-col px-2 py-1.5 text-sm
-                            ${item.name === 'name' || item.name === 'lastName' ? 'w-5/12' : 'w-10/12' }`}
+                            ${item.name === 'name' || item.name === 'lastName' ? 'w-10/12 sm:w-5/12' : 'w-10/12' }`}
                         >
                             <label className="pl-1" htmlFor={item.name}>
                                 {item.label}
