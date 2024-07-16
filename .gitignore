@@ -24,4 +24,3 @@ dist-ssr
 /Backend/Config/.env
 /Backend/Config/dbConfig.php
 /Backend/Config/mailerConfig.php
-Readme.MD
